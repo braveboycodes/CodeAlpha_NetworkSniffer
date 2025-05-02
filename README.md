@@ -53,9 +53,7 @@ Install Npcap
 
 Run the Script
 
-bash
-Copy
-Edit
+
 python sniffer.py
 ✅ Done! It will start showing you live packets. Use Ctrl + C to stop.
 
