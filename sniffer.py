@@ -7,15 +7,15 @@ def packet_callback(packet):
         protocol = packet["IP"].proto  # Extract protocol type (TCP, UDP, etc.)
         
         # Print captured packet details
-        print(f"Source : {ip_src} -> Destination : {ip_dst} | Protocol: {protocol}")
+        print(f"Source of IP is : {ip_src} -> Destination of IP is : {ip_dst} | Protocol: {protocol}")
         
         # Optionally, identify the type of protocol (TCP, UDP, ICMP)
         if packet.haslayer("TCP"):
-            print("TCP Protocol detected.")
+            print("The TCP Protocol has been detected.")
         elif packet.haslayer("UDP"):
-            print("UDP Protocol detected.")
+            print("The UDP Protocol has been detected.")
         elif packet.haslayer("ICMP"):
-            print("ICMP Protocol detected.")
+            print("The ICMP Protocol has been detected.")
 
 def start_sniffing():
     print("Starting packet capture... Press Ctrl+C to stop.")
