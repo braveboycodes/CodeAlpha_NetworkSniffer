@@ -7,7 +7,7 @@ def packet_callback(packet):
         protocol = packet["IP"].proto  # Extract protocol type (TCP, UDP, etc.)
         
         # Print captured packet details
-        print(f"Source IP: {ip_src} -> Destination IP: {ip_dst} | Protocol: {protocol}")
+        print(f"Source : {ip_src} -> Destination : {ip_dst} | Protocol: {protocol}")
         
         # Optionally, identify the type of protocol (TCP, UDP, ICMP)
         if packet.haslayer("TCP"):
